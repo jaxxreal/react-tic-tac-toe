@@ -1,0 +1,45 @@
+.gameboard {
+    margin: 0 auto;
+    position: relative;
+}
+
+.gameboard__row {
+
+}
+
+.gameboard__cell {
+    float: left;
+}
+
+.gameboard__cell > img {
+    transition: scale .5s ease;
+    animation: show-cell-sign .5s ease;
+}
+
+.gameboard__ruler {
+    position: absolute;
+    border-radius: 6px;
+    background: white;
+}
+
+.gameboard__ruler_vertical {
+    width: 6px;
+    height: 100%;
+}
+
+.gameboard__ruler_horizontal {
+    height: 6px;
+    width: 100%;
+}
+
+@keyframes show-cell-sign
+{
+    from
+    {
+        transform: scale(0.1);
+    }
+    to
+    {
+        transform: scale(1);
+    }
+}

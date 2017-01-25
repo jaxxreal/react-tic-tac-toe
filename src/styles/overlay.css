@@ -1,0 +1,36 @@
+.overlay
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity .5s ease, z-index .5s ease;
+    background: rgba(210, 210, 210, 0.9);
+}
+
+.overlay.show
+{
+    z-index: 1;
+    opacity: 1;
+}
+
+.overlay__inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.overlay__title
+{
+    margin: 0;
+    font-size: 100px;
+}
+
+.overlay__link
+{
+    text-decoration: underline;
+    cursor: pointer;
+}

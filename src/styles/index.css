@@ -1,0 +1,12 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'MoonLight', sans-serif;
+    background: url("http://www.wallpaperbetter.com/wallpaper/704/150/334/space-dark-stars-dark-blue-2K-wallpaper.jpg") no-repeat;
+}
+
+*
+{
+    box-sizing: border-box;
+}
